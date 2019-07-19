@@ -19,10 +19,17 @@ describe('FizzBuzz', () => {
     assert.equal(result, '2')
   })
 
-  describe('Fizz', () => {
+  describe('> Fizz', () => {
     it('returns "Fizz" for 3', () => {
       const result = FizzBuzz.parse(3)
       assert.equal(result, 'Fizz')
+    })
+  })
+
+  describe('> Buzz', () => {
+    it('returns "Buzz" for 5', () => {
+      const result = FizzBuzz.parse(5)
+      assert.equal(result, 'Buzz')
     })
   })
 })

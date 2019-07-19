@@ -36,6 +36,16 @@ describe('FizzBuzz', () => {
       assertFizzBuzz(10, 'Buzz')
     })
   })
+
+  describe('> FizzBuzz', () => {
+    it('returns "FizzBuzz" for 15', () => {
+      assertFizzBuzz(15, 'FizzBuzz')
+    })
+
+    it('returns "FizzBuzz" for 30', () => {
+      assertFizzBuzz(30, 'FizzBuzz')
+    })
+  })
 })
 
 function assertFizzBuzz (input, expectation) {

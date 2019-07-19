@@ -6,7 +6,7 @@
   "scripts": {
     "commit": "git add -A; timestamp=$(date \"+%c\") && git commit -m \"TCR @ $timestamp\"; git push",
     "lint": "standard",
-    "pretest": "standard --fix",
+    "pretest": "standard",
     "revert": "git reset --hard",
     "tcr": "npm test && npm run commit || npm run revert",
     "test": "mocha -D bdd -R list ."

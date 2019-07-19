@@ -1,6 +1,13 @@
 module.exports.parse = (input) => {
-  if (input % 3 === 0 && input % 5 === 0) return 'FizzBuzz'
-  if (input % 5 === 0) return 'Buzz'
-  if (input % 3 === 0) return 'Fizz'
+  if (isFizz(input) && isBuzz(input)) return 'FizzBuzz'
+  if (isBuzz(input)) return 'Buzz'
+  if (isFizz(input)) return 'Fizz'
   return input.toString()
+}
+function isBuzz (input) {
+  return input % 5 === 0
+}
+
+function isFizz (input) {
+  return input % 3 === 0
 }

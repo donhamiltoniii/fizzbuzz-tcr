@@ -18,4 +18,11 @@ describe('FizzBuzz', () => {
     const result = FizzBuzz.parse(2)
     assert.equal(result, '2')
   })
+
+  describe('Fizz', () => {
+    it('returns "Fizz" for 3', () => {
+      const result = FizzBuzz.parse(3)
+      assert.equal(result, 'Fizz')
+    })
+  })
 })

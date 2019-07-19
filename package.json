@@ -1,0 +1,22 @@
+{
+  "name": "fizzbuzz-tcr",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "commit": "git add -A; timestamp=$(date \"+%c\") && git commit -m \"TCR @ $timestamp\"; git push",
+    "lint": "standard",
+    "pretest": "standard",
+    "revert": "git reset --hard",
+    "tcr": "npm test && npm run commit || npm run revert",
+    "test": "mocha -D bdd -R list ."
+  },
+  "keywords": [],
+  "author": "Don Hamilton III <donhamiltoniii@gmail.com> (https://donhamiltoniii.com)",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.0",
+    "standard": "^13.0.2"
+  }
+}

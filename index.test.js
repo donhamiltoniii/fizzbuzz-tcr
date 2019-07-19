@@ -31,6 +31,10 @@ describe('FizzBuzz', () => {
     it('returns "Buzz" for 5', () => {
       assertFizzBuzz(5, 'Buzz')
     })
+
+    it('returns "Buzz" for 10', () => {
+      assertFizzBuzz(10, 'Buzz')
+    })
   })
 })
 

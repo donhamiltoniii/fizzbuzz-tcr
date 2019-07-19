@@ -1,3 +1,3 @@
 module.exports.parse = (input) => {
-  return input
+  return input.toString()
 }

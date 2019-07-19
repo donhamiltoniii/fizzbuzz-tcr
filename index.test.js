@@ -10,13 +10,11 @@ describe('Canary', () => {
 
 describe('FizzBuzz', () => {
   it('returns "1" for 1', () => {
-    const result = FizzBuzz.parse(1)
-    assert.equal(result, '1')
+    assertFizzBuzz(1, '1')
   })
 
   it('returns "2" for 2', () => {
-    const result = FizzBuzz.parse(2)
-    assert.equal(result, '2')
+    assertFizzBuzz(2, '2')
   })
 
   describe('> Fizz', () => {
@@ -33,3 +31,8 @@ describe('FizzBuzz', () => {
     })
   })
 })
+
+function assertFizzBuzz (input, expectation) {
+  const result = FizzBuzz.parse(input)
+  assert.equal(result, expectation)
+}
